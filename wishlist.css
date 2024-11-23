@@ -1,196 +1,196 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("./fibreff/fibre-font.otf");
+@import url("./fibreff/fibre-font.woff");
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow: hidden; */
 }
 
 * {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::before,
+::after {
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 body {
-  font-family: "Poppins", sans-serif;
-  /* overflow: hidden; */
+  font-family: "Fibre Vintage";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #fff;
+  background-color: #000;
 }
+
+a {
+  text-decoration: none;
+  vertical-align: middle;
+  --webkit-tap-highlight-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1000px;
-  /* border: 1px solid red; */
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
-@media (min-width: 425px) {
-  .container {
-      width: 400px;
-  }
-}
-/* Small */
-@media (min-width: 769px) {
-  .container {
-      width: 700px;
-  }
-}
-/* Medium */
-@media (min-width: 992px) {
-  .container {
-      width: 970px;
-  }
-}
-/* Large */
-@media (min-width: 1200px) {
-  .container {
-      width: 1170px;
-  }
-}
-/* Start Header */
-.header {
-  position: relative;
-  height: 100vh;
-  background-image: url(../images/HEADER.jpeg);
-  background-size: cover;
-  background-position: center;
-  box-shadow: inset 1000px 1000px 800px 500px rgba(0, 0, 0, 0.7);
-  padding: 20px;
-}
-.nav{
+
+/* -------------------*
+    #Reused Selector
+*----------------------*/
+.item-floating {
+  position: absolute;
+  font-size: 10px;
+  font-weight: 600;
+  top: -8px;
+  right: 8px;
+  background-color: red;
+  color: #fff;
+  width: 17px;
+  height: 17px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  /* border: 1px solid red; */
+  justify-content: center;
+  border-radius: 50%;
 }
-.header .logo {
-  width: 60px;
+
+
+
+
+/* Start Header */
+.inner-wishlist {
+  height: 300px;
+  background-image: url(./images/play.jpeg);
+  background-size: cover;
+    background-position: center;
+    box-shadow: inset 1000px 1000px 800px 500px rgba(0, 0, 0, 0.7);
 }
-.menu_bar{
-  width: 2rem;
-  height: 2rem;
+.inner-wishlist :where(.wrap, .menu > ul),
+.list-inline > ul {
+  display: flex;
+  align-items: center;
+}
+
+.header-left,
+.header-right {
+  flex-grow: 1;
+}
+
+.header-center nav {
+  margin-top: 80px;
   display: none;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  right: 110px;
-  font-size: 25px;
-  cursor: pointer;
-  color: aliceblue;
-   /* border: 1px solid red; */
-}
-.toggle_menu_bar{
-  display: flex !important;
-  position: absolute;
-  top: 65.23px;
-  background: rgb(32, 30, 30);
-  width: 100%;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 1rem;
-}
-/* .header .links {
-  position: relative;
-} */
-.header .links ul {
-  display: flex;
-  position: relative;
-  text-align: center;
-  right: 0;
-  list-style: none;
+  gap: 180px;
+  max-width: 720px;
   /* border: 1px solid red; */
-}
-.header .links ul li a{
-  /* display: block; */
-  padding: 15px;
-  font-size: 25px;
-  text-decoration: none;
-  color: rgb(199, 194, 194);
-}
-.header .links ul li a:hover {
-  color: white;
-  font-weight: bold;
-  text-decoration: underline;
-}
-.cart {
-  display: flex;
-  /* border: 1px solid red; */
-}
-.cart i {
-  color: white;
-  font-size: 20px;
-  padding: 15px;
-}
-.header .p1{
-  font-size: 60px;
-  color: aliceblue;
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  width: 900px;
-  max-width: 100%;
-}
-.header .p2{
-  font-size: 29px;
-  color: aliceblue;
-  position: absolute;
-  left: 50%;
-  top: 53%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  width: 950px;
-  max-width: 100%;
-}
-.button button {
-  position: absolute;
-  left: 50%;
-  top: 70%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  padding: 10px 20px;
-  border-radius: 26px;
-  max-width: 100%;
-  border: .1px solid white;
-  background-color: #D62828;
-}
-@media (max-width: 768px) {
-  .container{
-      width: 100%;
-  }
-  .menu_bar{
-      display: flex;
-      right: 20px;
-  }
-  
-  .header .p1{
-      margin-top: 130px;
-      font-size: 50px;
-  }
-  .header .p2{
-      margin-top: 90px;
-      margin-bottom: 100px;
-  }
-  .header button{
-      margin-top: 110px;
-  }
-  .links{
-      display: none;
-  }
-  .links ul{
-      padding: 0;
-      top: 5px;
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: column;
-  }
-  .links ul li a{
-      font-size: 20px;
-  }
-  .cart{
-      display: none;
-  }
 }
 
+.header-center .menu ul li a {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0 25px;
+  transition: .3s;
+  color: #b4adad;
+  gap: 5px;
+}
+
+.header-center .menu ul li a:hover{
+  text-decoration: underline;
+  color: #fff;
+}
+.menu-bar .ri-menu-line {
+  color: #fff;
+}
+.header-right ul,.menu-trigger {
+  justify-content: flex-end;
+}
+.list-inline .ri-heart-line, .ri-shopping-bag-line{
+  color: #fff;
+}
+
+.list-inline a,
+.menu-trigger {
+  position: relative;
+  font-size: 24px;
+  padding: 0 8px;
+  line-height: 1;
+  display: flex;
+  transition: 0.3s;
+}
+
+.header-right .list-inline{
+  display: none;
+}
+@media (min-width: 992px) {
+  .menu-trigger {
+    display: none;
+  }
+  .header-center nav {
+    display: grid;
+  }
+  .header-right .list-inline{
+    display: block;
+  }
+}
 /* End Header */
+
+/* Start Wishlist */
+.wishlist {
+  margin-top: 80px;
+}
+
+.wishlist .message {
+  text-align: center;
+  color: #fff;
+  font-style: normal;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.wishlist{
+  margin-top: 100px;
+  text-align: center;
+}
+.wishlist_container button {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background-color: #D62828;
+  align-items: center;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 15px;
+  width: 170px;
+}
+.wishlist_container button a{
+  color: #fff;
+  text-transform: uppercase;
+}
+/* End Wishlist */
+
+/* Start Footer */
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: aliceblue;
+  height: 100px;
+
+}
+.footer span{
+  color: #D62828;
+}
+/* End Footer */

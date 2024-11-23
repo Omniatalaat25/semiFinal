@@ -1,223 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./wishlist.css">
-    <title>Wishlist</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>wishlist</title>
 </head>
+
 <body>
-    <div id="page" class="page-shop">
-        <div class="header" id="home">
-            <div class="container">
-                <div class="nav">
-                    <div class="logo">
-                        <img src="./images/LOGO.png" alt="" class="logo">
+    <div id="page" class="page-wishlist">
+        <header>
+            <div class="inner-wishlist">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="header-left">
+                            <div class="list-inline">
+                                <ul>
+                                    <li><a href=""><img class="logo" src="./images/LOGO.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-center">
+                            <nav class="menu">
+                                <ul>
+                                    <li><a href="./index.html"><span class="home">Home</span></a></li>
+                                    <div>--</div>
+                                    <li><a href="./wishlist.html"><span>wishlist</span></a></li>
+                                    
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header-right">
+                            <div class="menu-bar">
+                                <a href="#0" class="menu-trigger"><i class="ri-menu-line"></i></a>
+                            </div>
+                            <div class="list-inline">
+                                <ul>
+                                    <li><a href=""><span class="item-floating">0</span><i
+                                        class="ri-heart-line"></i></a>
+                                    </li>
+                                    <li><a href="./cart.html"><span class="item-floating">0</span><i
+                                                class="ri-shopping-bag-line"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="menu_bar">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                    <div class="links">
-                        <ul>
-                            <li><a href="#home">HOME</a></li>
-                            <li><a href="#about">ABOUT</a></li>
-                            <li><a href="./shop.html">SHOP</a></li>
-                            <li><a href="./cart.html">Cart</a></li>
-                            <li><a href="./contact.html">CONTACT</a></li>
-                        </ul>
-                    </div>
-                    <div class="cart">
-                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                        <a href=""><i class="fa-solid fa-shield-heart"></i></a>
-                    </div>
-                
-                </div>
-                <div class="main-content">
-                    <p class="p1">Crafting your Exceptional Dining Reservations</p>
-                    <p class="p2">Reservation is a step into a world of gastronomic wonder. Reserve your table today and let us
-                        paint your culinary dreams into reality.
-                    </p>
-                </div>
-                <div class="button">
-                    <button>EXPLORE PRODUCTS</button>
+                    
                 </div>
             </div>
-        </div>
+        </header>
         <!-- End Header -->
         
         <!-- start Shop -->
         
-        <div class="shop">
-            <div class="container">
-                <div class="header-shop">
-                    <h6>Shop By Category</h6>
-                    <p>Shop By Category</p>
-                </div>
-                <div class="categories_container">
-                    
-                </div>
+        <div class="wishlist">
+            <div class="wishlist_container">
+                
+                <div id="wishlist-message" class="message">Your Wishlist IS Currently Empty.</div>
 
-
-                <div class="products_container">
-
-                        <div class="product">
-                            <i class="fa-solid fa-shield-heart"></i>
-                            <img src="./images/Frame 6.png" alt="">
-                            <div class="rate-price">
-                                <div class="price-rate">
-                                    <p class="price">150 EG</p>
-                                    <div class="rate">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p class="p2">4.5</p>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="p">
-                                    <p>Pork Chop with Apple Chutney</p>
-                                </div>
-                                <div class="choice">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <p>4 pieces</p>
-                                </div>
-                                <div class="choice">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <p>4 pieces</p>
-                                </div>
-                                <button>Add To Cart</button>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <i class="fa-solid fa-shield-heart"></i>
-                            <img src="./images/Frame 6.png" alt="">
-                            <div class="rate-price">
-                                <div class="price-rate">
-                                    <p class="price">150 EG</p>
-                                    <div class="rate">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p class="p2">4.5</p>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="p">
-                                    <p>Pork Chop with Apple Chutney</p>
-                                </div>
-                                <div class="choice">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <p>4 pieces</p>
-                                </div>
-                                <div class="choice">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <p>4 pieces</p>
-                                </div>
-                                <button>Add To Cart</button>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <i class="fa-solid fa-shield-heart"></i>
-                            <img src="./images/Frame 6.png" alt="">
-                            <div class="rate-price">
-                                <div class="price-rate">
-                                    <p class="price">150 EG</p>
-                                    <div class="rate">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p class="p2">4.5</p>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="p">
-                                    <p>Pork Chop with Apple Chutney</p>
-                                </div>
-                                <div class="choice">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <p>4 pieces</p>
-                                </div>
-                                <div class="choice">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <p>4 pieces</p>
-                                </div>
-                                <button>Add To Cart</button>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <i class="fa-solid fa-shield-heart"></i>
-                            <img src="./images/Frame 6.png" alt="">
-                            <div class="rate-price">
-                                <div class="price-rate">
-                                    <p class="price">150 EG</p>
-                                    <div class="rate">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p class="p2">4.5</p>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="p">
-                                    <p>Pork Chop with Apple Chutney</p>
-                                </div>
-                                <div class="choice">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <p>4 pieces</p>
-                                </div>
-                                <div class="choice">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <p>4 pieces</p>
-                                </div>
-                                <button>Add To Cart</button>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <i class="fa-solid fa-shield-heart"></i>
-                            <img src="./images/Frame 6.png" alt="">
-                            <div class="rate-price">
-                                <div class="price-rate">
-                                    <p class="price">150 EG</p>
-                                    <div class="rate">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p class="p2">4.5</p>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="p">
-                                    <p>Pork Chop with Apple Chutney</p>
-                                </div>
-                                <div class="choice">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <p>4 pieces</p>
-                                </div>
-                                <div class="choice">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <p>4 pieces</p>
-                                </div>
-                                <button>Add To Cart</button>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <i class="fa-solid fa-shield-heart"></i>
-                            <img src="./images/Frame 6.png" alt="">
-                            <div class="rate-price">
-                                <div class="price-rate">
-                                    <p class="price">150 EG</p>
-                                    <div class="rate">
-                                        <i class="fa-solid fa-star"></i>
-                                        <p class="p2">4.5</p>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="p">
-                                    <p>Pork Chop with Apple Chutney</p>
-                                </div>
-                                <div class="choice">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <p>4 pieces</p>
-                                </div>
-                                <div class="choice">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <p>4 pieces</p>
-                                </div>
-                                <button>Add To Cart</button>
-                            </div>
-                        </div>
-                    
-                </div>
+                    <button><a href="./shop.html">Return To Shop</a></button>
             </div>
         </div>
     <!-- End Shop -->
@@ -231,18 +77,7 @@
     <!-- End Footer -->
     </div>
 
-
-
-
-    <div class="cart">
-        <div class="container">
-
-            <h2>Wishlist</h2>
-            <ul id="wishlist-list"></ul>
-            <p id="wishlist-message" class="message"></p>
-        </div>
-    </div>
-
     <script src="./index2.js"></script>
 </body>
+
 </html>

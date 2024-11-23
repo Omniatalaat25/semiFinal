@@ -3,6 +3,9 @@
 const BASE_URL = "http://localhost:3000";
 const categories_container = document.querySelector(".categories_container");
 const products_container = document.querySelector(".products_container");
+const product = document.querySelectorAll(".product")
+const button = document.querySelectorAll("button")
+const renderCartData = document.querySelector(".renderCartData")
 let activeSlug;
 
 async function getAllCategories() {
@@ -18,6 +21,13 @@ async function getAllProducts(activeSlug) {
     const finalRes = await res.json()
     displayProducts(finalRes)
 
+    function addToCart(image,price) {
+        renderCartData.appendChild(pro.image)
+        renderCartData.appendChild(pro.title)
+        renderCartData.appendChild(pro.price)
+        
+    }
+    button.addEventListener("click", () => addToCart(pro.image,pro.price))
 }
 getAllProducts(meal)
 getAllCategories();
@@ -45,7 +55,7 @@ function displayProducts(data) {
         (temp += `
                      <div class="product">
                     <i class="fa-solid fa-shield-heart"></i>
-                    <img src="./images/Frame 6.png" alt="">
+                    <img src="${pro.image}" alt="">
                     <div class="rate-price">
                         <div class="price-rate">
                             <p class="price">${pro.price}</p>
@@ -66,7 +76,7 @@ function displayProducts(data) {
                             <i class="fa-regular fa-circle-check"></i>
                             <p>${pro.type}</p>
                         </div>
-                        <button onClick="addToCart(${pro.id})">Add To Cart</button>
+                        <button onclick="addToCart('${pro.id}')">Add To Cart</button>
                     </div>
                 </div>
         `),
@@ -109,6 +119,8 @@ async function handleActiveCat (cat) {
 //         updateCart()
 //     }
 // }
+
+
 
 
 

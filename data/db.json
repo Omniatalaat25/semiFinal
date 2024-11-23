@@ -6,11 +6,11 @@
         {"id":4,"title":"Dubble","slug":"dubble","image":"../images/FOOTER.jpeg"}
     ],
     "products":[
-        {"id":1,"title":"pork shop with vegetarian","categorySlug":"vegetarian","price":"150 EG","rate":"4.5","pieces":"4","type":"spicy sauce"},
-        {"id":2,"title":"pork shop with meal","categorySlug":"meal","price":"150 EG","rate":"4.5","pieces":"4","type":"spicy sauce"},
-        {"id":3,"title":"pork shop with chicken","categorySlug":"chicken","price":"150 EG","rate":"4.5","pieces":"4","type":"spicy sauce"},
-        {"id":5,"title":"pork shop with chicken","categorySlug":"chicken","price":"150 EG","rate":"4.5","pieces":"4","type":"spicy sauce"},
-        {"id":6,"title":"pork shop with dubble","categorySlug":"dubble","price":"150 EG","rate":"4.5","pieces":"4","type":"spicy sauce"},
-        {"id":7,"title":"pork shop with dubble","categorySlug":"dubble","price":"150 EG","rate":"4.5","pieces":"4","type":"spicy sauce"}
+        {"id":1,"title":"pork shop with vegetarian","categorySlug":"vegetarian","price":"150 EG","rate":"4.5","pieces":"4","type":"spicy sauce","image":"../images/Frame 6.png"},
+        {"id":2,"title":"pork shop with meal","categorySlug":"meal","price":"150 EG","rate":"4.5","pieces":"4","type":"spicy sauce","image":"../images/Frame 6.png"},
+        {"id":3,"title":"pork shop with chicken","categorySlug":"chicken","price":"150 EG","rate":"4.5","pieces":"4","type":"spicy sauce","image":"../images/Frame 6.png"},
+        {"id":5,"title":"pork shop with chicken","categorySlug":"chicken","price":"150 EG","rate":"4.5","pieces":"4","type":"spicy sauce","image":"../images/Frame 6.png"},
+        {"id":6,"title":"pork shop with dubble","categorySlug":"dubble","price":"150 EG","rate":"4.5","pieces":"4","type":"spicy sauce","image":"../images/Frame 6.png"},
+        {"id":7,"title":"pork shop with dubble","categorySlug":"dubble","price":"150 EG","rate":"4.5","pieces":"4","type":"spicy sauce","image":"../images/Frame 6.png"}
     ]
 }
