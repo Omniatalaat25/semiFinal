@@ -211,6 +211,7 @@ ul {
   bottom: -40px;
   left: 370px;
   padding: 10px;
+  cursor: pointer;
 }
 
 /* End Contact */
